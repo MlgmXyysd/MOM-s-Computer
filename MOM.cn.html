@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MOM的电脑 - World of Goo - MeowCat Studio</title>
+		<link rel="stylesheet" media="all" href="css/MOM.cn.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/MOM.cn.js"></script>
+	</head>
+	<body onclick="hideTextBar()" onload="loaded()">
+		<img id="pagebg" src="images/bg.png" alt="" />
+		<img id="flare" src="images/lensFlare.png" alt="" />
+		<div class="aligner">
+			<div class="aligner2">
+				<div id="mom-splash" class="aligner3"></div>
+				<div id="mom-window" class="aligner3">
+					<div id="address">mom://opt/WoGChrome/bin/MOM</div>
+					<div class="eyelid" id="eyelid1"></div>
+					<div class="eyelid" id="eyelid2"></div>
+					<div id="close_button">
+						<a style="width: 22px; height: 21px; display: block;" href="#" onclick="momClose(); return false;"></a>
+					</div>
+					<div id="question_phase">
+						<div id="brand"></div>
+						<div id="textBar" onclick="addOptions()" onmouseover="overTextBar()" onmouseout="outTextBar()">
+							<span id="textBarCursor"></span>
+							<div id="textBarTop" class="textBarTop"></div>
+							<div id="textBarMiddle" class="textBarMiddle"></div>
+							<div id="textBarBottom" class="textBarBottom"></div>
+						</div>
+						<img src="images/askbutton.png" id="askButton" onclick="addOptions()" alt="" />
+						<span class="askText" onclick="addOptions()">问</span>
+					</div>
+					<div id="answer_phase">
+						<div id="loading">
+							<img src="images/loading_anim.gif" width="60" height="60" alt="Loading..." />
+						</div>
+						<div id="theAnswer" class="TwCen36" onclick="proceedAnswer()"></div>
+					</div>
+					<div id="footer" style="text-align: center;">World of Goo Chrome by MOM
+						<audio autoplay="autoplay">
+							<source src="audio/momStartup.ogg" type="audio/ogg" />
+							<source src="audio/momStartup.mp3" type="audio/mpeg" />
+						</audio>
+						<audio autoplay="autoplay" loop="loop">
+							<source src="audio/bigcomputer2.ogg" type="audio/ogg" />
+							<source src="audio/bigcomputer2.mp3" type="audio/mpeg" />
+						</audio>
+						<audio autoplay="autoplay" loop="loop">
+							<source src="audio/loop_superbirds.ogg" type="audio/ogg" />
+							<source src="audio/loop_superbirds.mp3" type="audio/mpeg" />
+						</audio>
+					</div>
+				</div>
+				<div id="console-window" class="aligner3">
+					<div id="console-content"></div>
+					<div id="inputline">momvax#
+						<span id="theinput"></span>
+						<span id="prompt">_</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mom-starting"></div>
+	</body>
+</html>

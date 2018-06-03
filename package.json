@@ -1,0 +1,61 @@
+{
+	"main": "index.html",
+	"name": "wogmom",
+	"nodejs": true,
+	"domain": "www.meowcat.org",
+	"description": "MOM的电脑 - World of Goo - MeowCat Studio",
+	"version": "1.0.0.0",
+	"chromium-args": "--disable-web-security",
+	"bugs": "mailto:mlgmxyysd@meowcat.org",
+	"keywords": [
+		"wog",
+		"World of Goo"
+	],
+	"maintainers": [
+		{
+			"name": "MeowCat Studio",
+			"email": "mlgmxyysd@meowcat.org",
+			"web": "http://www.meowcat.org/"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MeowCat End User License Agreement",
+			"url": "http://www.meowcat.org/eula.html"
+		}
+	],
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/MeowCat-Studio/GooTool.git",
+			"path": "source"
+		}
+	],
+	"contributors": [
+		{
+			"name": "MlgmXyysd",
+			"email": "mlgmxyysd@meowcat.org",
+			"web": "http://www.meowcat.org/"
+		}
+	],
+	"window": {
+		"icon": "images/icon.ico",
+		"position": "center",
+		"width": 1026,
+		"height": 700,
+		"title": "MOM的电脑 - World of Goo - MeowCat Studio",
+		"resizable": false,
+		"max_width": 1026,
+		"max_height": 700,
+		"min_width": 1026,
+		"min_height": 700,
+		"show_in_taskbar": true,
+		"frame": true,
+		"kiosk": false
+	},
+	"webkit": {
+		"plugin": true,
+		"java": true,
+		"page-cache": false
+	}
+}

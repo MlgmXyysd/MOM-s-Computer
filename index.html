@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MOM的电脑 - World of Goo - MeowCat Studio</title>
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<meta charset="UTF-8" />
+	</head>
+	<body ondragstart="return false;" oncontextmenu="return false;" onselectstart="return false;">
+		<div id="site-loader" class="load-complete" style="">
+			<div class="load-position">
+				<h6>加载中...</h6>
+				<div class="loading">
+					<div class="loading-line"></div>
+					<div class="loading-break loading-dot-1"></div>
+					<div class="loading-break loading-dot-2"></div>
+					<div class="loading-break loading-dot-3"></div>
+				</div>
+			</div>
+		</div>
+		<!--div onselectstart="return false" id="max_height"></div-->
+		<div id="gamebox"></div>
+		<div id="ground"></div>
+		<div id="bg"></div>
+		<div id="create" onClick="CreateBall(100,1700);">
+			<p id="application">应用程序</p>
+		</div>
+		<div id="uibar"></div>
+		<div id="happyTree"></div>
+		<div id="mombg">
+			<p id="shortcut">MOM 快捷方式</p>
+		</div>
+		<div id="mom" onClick="toMOM();"></div>
+		<div id="mom-splash"></div>
+		<div id="popup">
+			<p id="popmessage">
+				<strong>----</strong> 重要消息 <strong>----</strong>
+				</br>
+				</br>
+				</br>
+				</br>
+				再靠近一点
+				</br>
+				爱你的，MOM
+			</p>
+			<div id="okbutton" onclick="closepopup();">
+				<p id="ok" onclick="closepopup();">OK</p>
+			</div>
+		</div>
+		<div id="block"></div>
+		<div id="bg1"></div>
+		<div id="reset">
+			<div id="coverOpen"></div>
+			<div id="coverClose"></div>
+			<div id="nukem_bg"></div>
+			<div id="button"></div>
+			<audio autoplay="autoplay" loop="loop">
+				<source src="audio/bigcomputer2.ogg" type="audio/ogg" />
+				<source src="audio/bigcomputer2.mp3" type="audio/mpeg" />
+			</audio>
+			<audio autoplay="autoplay" loop="loop">
+				<source src="audio/loop_superbirds.ogg" type="audio/ogg" />
+				<source src="audio/loop_superbirds.mp3" type="audio/mpeg" />
+			</audio>
+		</div>
+		<script type="text/javascript" src="js/wog.js"></script>
+	</body>
+</html>

@@ -1,0 +1,475 @@
+.load-position .logo {
+	margin: 0 auto;
+}
+
+.load-complete {
+	position: fixed;
+	overflow: hidden;
+	background: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 999999;
+}
+
+.load-complete .logo {
+	color: #000000;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.load-complete .load-position h6 {
+	text-align: center;
+	color: #000000;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+.load-complete .load-position {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	z-index: 999;
+	right: 0;
+	margin-top: -100px;
+}
+
+.load-complete .loading {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	margin: 20px auto;
+	left: 0;
+	right: 0;
+}
+
+.load-complete .loading-line {
+	position: absolute;
+	background: rgba(0,0,0,0.1);
+	width: 100%;
+	height: 2px;
+}
+
+.load-complete .loading-break {
+	position: absolute;
+	background: #333;
+	width: 48px;
+	height: 2px;
+	border-radius: 1px;
+}
+
+.load-complete .loading-dot-1 {
+	-webkit-animation: loading 2s infinite;
+	-moz-animation: loading 2s infinite;
+	-ms-animation: loading 2s infinite;
+	-o-animation: loading 2s infinite;
+	animation: loading 2s infinite;
+}
+
+.load-complete .loading-dot-2 {
+	-webkit-animation: loading 2s 0.5s infinite;
+	-moz-animation: loading 2s 0.5s infinite;
+	-ms-animation: loading 2s 0.5s infinite;
+	-o-animation: loading 2s 0.5s infinite;
+	animation: loading 2s 0.5s infinite;
+}
+
+.load-complete .loading-dot-3 {
+	-webkit-animation: loading 2s 1s infinite;
+	-moz-animation: loading 2s 1s infinite;
+	-ms-animation: loading 2s 1s infinite;
+	-o-animation: loading 2s 1s infinite;
+	animation: loading 2s 1s infinite;
+}
+
+@keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-moz-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-webkit-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-ms-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-o-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+div{
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+@font-face{
+    font-family: "Tw Cen MT Condensed Extra Bold";
+    src: url('../fonts/TwCenMTCondensedExtraBold.TTF');
+}
+
+@font-face{
+    font-family: "Minecraft";
+    src: url('../fonts/Minecraft.TTF');
+}
+
+div#gamebox{
+    width: 1024px;
+    height: 2000px;
+}
+
+div#max_height{
+    position: fixed;
+    top:20px;
+    left:50px;
+}
+
+body{
+    overflow:hidden;
+	-webkit-user-select: none 
+}
+
+div.ball{
+    background: url('../images/ball.png') no-repeat;
+    background-size: 100% 100%;
+    /*background: rgba(0,0,255,0.7);*/
+    width: 32px;
+    height: 32px;
+}
+
+div.hover{
+	cursor: move;
+    background: url('../images/ball_hover.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+div.spring{
+    width:16px;
+    background: url('../images/arm.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+div.spring_x{
+    width:16px;
+    background: url('../images/spring_x.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+div#mom-splash {
+    position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-243px;
+	margin-top:-157px;
+	width: 486px;
+	height: 314px;
+    z-index: 5;
+	display:none;
+	background: url('../images/momSplash.png');
+}
+
+div#ground{
+    top: 1990px;
+    width: 1024px;
+    height: 120px;
+    background: url('../images/ground.png') repeat-x;
+    z-index: -1;
+}
+
+div#bg1{
+    width: 1024px;
+    height: 1024px;
+    top:1000px;
+    background: url('../images/wallpaper.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: -10;
+}
+
+div#create{
+    width: 50px;
+    height: 50px;
+    top:2030px;
+	left:100px;
+    background: url('../images/button.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: 105;
+}
+
+div#create:hover{
+    width: 60px;
+    height: 60px;
+    top:2025px;
+	left:95px;
+}
+
+p#application {
+	top: 35px;
+	left:-30px;
+    position: absolute;
+	font-family: "Minecraft";
+    font-weight: bolder;
+    font-size: 15px;
+    color: black;
+    text-shadow: 
+        2px 0px 0px lime,
+        1.414px 1.414px 0px lime,
+        -2px 0px 0px lime,
+        -1.414px 1.414px 0px lime,
+        0px 2px 0px lime,
+        -1.414px -1.414px 0px lime,
+        0px -2px 0px lime,
+        1.414px -1.414px 0px lime;
+    filter:
+        Dropshadow(offx=1,offy=0,color=lime)
+        Dropshadow(offx=0,offy=1,color=lime)
+        Dropshadow(offx=0,offy=-1,color=lime)
+        Dropshadow(offx=-1,offy=0,color=lime);
+}
+
+div#uibar{
+    width: 1024px;
+    height: 128px;
+    top:885px;
+    background: url('../images/uibar.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: -9;
+}
+
+div#happyTree{
+    width: 128px;
+    height: 256px;
+    top:650px;
+	left:750px;
+    background: url('../images/happyTree.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: -9;
+}
+
+div#mom{
+    width: 128px;
+    height: 121px;
+    top:200px;
+	left:448px;
+    background: url('../images/MOM_icon_up.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: 1;
+}
+
+div#mom:hover{
+    background: url('../images/MOM_icon_over.png') no-repeat;
+    background-size:100% 100%;
+    width: 132px;
+    height: 125px;
+    top:198px;
+	left:446px;
+}
+
+div#mombg{
+    width: 400px;
+    height: 400px;
+    top:70px;
+	left:320px;
+	background: url('../images/fx_smokeGreen_multi.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: -6;
+	opacity:1;
+}
+
+p#shortcut {
+    position: absolute;
+	top: 235px;
+	left:100px;
+	font-family: "Minecraft";
+    font-weight: bolder;
+    font-size: 20px;
+    color: lime;
+    padding: 1px;
+    text-shadow: 
+        2px 0px 0px green,
+        1.414px 1.414px 0px green,
+        -2px 0px 0px green,
+        -1.414px 1.414px 0px green,
+        0px 2px 0px green,
+        -1.414px -1.414px 0px green,
+        0px -2px 0px green,
+        1.414px -1.414px 0px green;
+    filter:
+        Dropshadow(offx=1,offy=0,color=green)
+        Dropshadow(offx=0,offy=1,color=green)
+        Dropshadow(offx=0,offy=-1,color=green)
+        Dropshadow(offx=-1,offy=0,color=green);
+}
+
+div#okbutton{
+    width: 168px;
+    height: 51px;
+    top:300px;
+	left:300px;
+	text-align:center;
+    background: url('../images/widebutton_up.png') no-repeat;
+    background-size:  auto 100%;
+}
+
+div#okbutton:hover{
+    width: 168px;
+    height: 51px;
+	text-align:center;
+    background: url('../images/widebutton_over.png') no-repeat;
+    background-size:  auto 100%;
+}
+
+div#block{
+    width: 1024px;
+    height: 2100px;
+	display:none;
+	text-align:center;
+    background-size:  auto 100%;
+    z-index: 32760;
+}
+
+div#popup{
+    width: 512px;
+    height: 382px;
+	left:50%;
+	top:50%;
+	margin-left:-256px;
+	margin-top:-191px;
+	display:none;
+    background: url('../images/popup.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: 32767;
+}
+
+p#popmessage {
+    position: absolute;
+	top: 50px;
+	left:50px;
+	font-family: "Tw Cen MT Condensed Extra Bold";
+    font-weight: bolder;
+    font-size: 20px;
+    color: lime;
+    padding: 1px;
+    text-shadow: 
+        2px 0px 0px black,
+        1.414px 1.414px 0px black,
+        -2px 0px 0px black,
+        -1.414px 1.414px 0px black,
+        0px 2px 0px black,
+        -1.414px -1.414px 0px black,
+        0px -2px 0px black,
+        1.414px -1.414px 0px black;
+    filter:
+        Dropshadow(offx=1,offy=0,color=black)
+        Dropshadow(offx=0,offy=1,color=black)
+        Dropshadow(offx=0,offy=-1,color=black)
+        Dropshadow(offx=-1,offy=0,color=black);
+}
+
+p#ok {
+	top: -5px;
+	left:73px;
+    position: absolute;
+	font-family: "Tw Cen MT Condensed Extra Bold";
+    font-weight: bolder;
+    font-size: 20px;
+    color: lime;
+}
+
+div#bg{
+    width: 1024px;
+    height: 1024px;
+    background: url('../images/bg.png') no-repeat;
+    background-size:  auto 100%;
+    z-index: -10;
+}
+
+#reset{
+    width: 152px;
+    height: 74px;
+    top:2030px;
+    left: 724px;
+    background: url('../images/nukem_bg.cn.png');
+    z-index: 100;
+}
+
+#button{
+    width: 60px;
+    height: 60px;
+    top: 7px;
+    left: 7px;
+    background: url('../images/button_up.png');
+    z-index: 101;
+}
+
+#button:hover{
+     background: url('../images/button_over.png');
+}
+
+#coverClose{
+    width: 60px;
+    height: 60px;
+    top: 7px;
+    left: 7px;
+    background: url('../images/coverClosed_up.png');
+    z-index: 102;
+}
+#coverClose:hover{
+    background: url('../images/coverClosed_over.png');
+}
+
+#coverOpen{
+    width: 60px;
+    height: 60px;
+    top: 7px;
+    left: -55px;
+    background: url('../images/coverOpen_up.png');
+    z-index: 102;
+    display: none;
+}
+
+#coverOpen:hover{
+    background: url('../images/coverOpen_over.png');
+}
